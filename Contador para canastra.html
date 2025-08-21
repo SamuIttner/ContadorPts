@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contador para canastra.css">
+    <title>Contador para Canastra</title>
+</head>
+<body>
+    
+    <header>
+    <h1>Contador de pontos para canastra</h1>
+    </header>
+
+    <section>
+
+    <div>
+        <label for="placarMaximo">Placar Máximo:</label>
+        <input type="number" id="placarMaximo" value="3000" min="1" step="1">
+    </div>
+
+        <input type="text" placeholder="Equipe 1" id="nome1" maxlength="15">
+        <input type="text" placeholder="Equipe 2" id="nome2" maxlength="15">
+
+        <input type="number" placeholder="0" id="num1">
+        <input type="number" placeholder="0" id="num2">
+        
+        <input type="number" placeholder="Pontos da mesa" id="pts1" step="1">
+        <input type="number" placeholder="Pontos da mesa" id="pts2" step="1">
+
+        <input type="button" value="+" id="btn1" onclick="somar()">
+
+        <input type="button" value="Zerar placar" id="btn2" onclick="zerar()">
+
+    </section>
+    
+    
+    
+    <footer> &copy;SitedoSamu</footer>
+
+    <script src="Contador para canastra.js"></script>
+</body>
+</html>
