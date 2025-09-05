@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    border: 0;
+    background-color: blue;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    position: relative; /* Faz com que o <section> se torne o referencial para qualquer elemento filho com position: absolute; */
+}
+
+section input[type=number]::-webkit-inner-spin-button,    /* Remove as setas do input type number no Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button {    /* Remove o outline das setas */   
+    -webkit-appearance: none;
+}
+section input[type=number] {    /* Remove as setas no Firefox */
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+label {
+    font-size: 1.5em;
+    margin-left: 32.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#placarMaximo {
+    width: 150px;
+    background-color: white; /* mesma cor do section */
+    margin-top: 20px;
+    margin-left: 32.5px;
+    border: none;           /* remove a borda */
+    border-bottom: 2px solid;
+    outline: none;          /* remove a borda ao focar */
+    color: black;           /* cor do texto */
+    padding: 8px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#nome1, #nome2 {
+    width: 150px;
+    background-color: white; /* mesma cor do section */
+    margin-top: 50px;
+    margin-left: 32.5px;
+    border: none;           /* remove a borda */
+    box-shadow: none;       /* remove qualquer sombra */
+    outline: none;          /* remove a borda ao focar */
+    color: black;           /* cor do texto */
+    padding: 8px;
+    font-size: 1.5em;
+    text-align: center;
+}
+#num1, #num2 {
+    width: 150px;
+    background-color: white; /* mesma cor do section */
+    margin-top: 20px;
+    margin-left: 32.5px;
+    border: none;           /* remove a borda */
+    box-shadow: none;       /* remove qualquer sombra */
+    outline: none;          /* remove a borda ao focar */
+    color: black;           /* cor do texto */
+    padding: 8px;
+    font-size: 1.5em;
+    text-align: center;
+    pointer-events: none;
+}
+
+#pts1, #pts2 {
+    width: 150px;
+    background-color: white; /* mesma cor do section */
+    margin-top: 20px;
+    margin-left: 32.5px;
+    border: none;           /* remove a borda */
+    border-bottom: 2px solid;
+    box-shadow: none;       /* remove qualquer sombra */
+    outline: none;          /* remove a borda ao focar */
+    color: black;           /* cor do texto */
+    font-size: 1em;
+}
+
+section #btn1{
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    position: absolute; /* Faz com que o botão seja posicionado em relação ao ancestral mais próximo que tenha position: relative; (no caso, o <section>). */
+    outline: none;
+    box-shadow: none;
+    font-size: 2em;
+}
+
+section #btn2{
+    background-color: aqua;
+    width: auto;
+    height: auto;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    outline: none;
+    box-shadow: none;
+    font-size: 1em;
+}
+
+footer{
+    font-style: italic;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 430px) {
+    /*estilo para celular*/
+}
