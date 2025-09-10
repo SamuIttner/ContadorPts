@@ -1,7 +1,7 @@
 body{
     margin: 0;
     border: 0;
-    background-color: blue;
+    background-color: rgb(15, 15, 15);
 }
 
 h1{
@@ -12,7 +12,7 @@ h1{
 section{
     width: 450px;
     height: 400px;
-    background-color: white;
+    background-color: rgb(39, 39, 39);
     border-radius: 10px;
     border-color: black;
     box-shadow: 5px 5px 10px black;
@@ -37,7 +37,7 @@ label {
 
 #placarMaximo {
     width: 150px;
-    background-color: white; /* mesma cor do section */
+    background-color: rgb(39, 39, 39); /* mesma cor do section */
     margin-top: 20px;
     margin-left: 32.5px;
     border: none;           /* remove a borda */
@@ -51,7 +51,7 @@ label {
 
 #nome1, #nome2 {
     width: 150px;
-    background-color: white; /* mesma cor do section */
+    background-color: rgb(39, 39, 39); /* mesma cor do section */
     margin-top: 50px;
     margin-left: 32.5px;
     border: none;           /* remove a borda */
@@ -64,7 +64,7 @@ label {
 }
 #num1, #num2 {
     width: 150px;
-    background-color: white; /* mesma cor do section */
+    background-color: rgb(39, 39, 39); /* mesma cor do section */
     margin-top: 20px;
     margin-left: 32.5px;
     border: none;           /* remove a borda */
@@ -79,7 +79,7 @@ label {
 
 #pts1, #pts2 {
     width: 150px;
-    background-color: white; /* mesma cor do section */
+    background-color: rgb(39, 39, 39); /* mesma cor do section */
     margin-top: 20px;
     margin-left: 32.5px;
     border: none;           /* remove a borda */
@@ -91,28 +91,44 @@ label {
 }
 
 section #btn1{
-    background-color: aqua;
+    background-color: rgb(99, 99, 99);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 10px;
     bottom: 20px;
     right: 20px;
     position: absolute; /* Faz com que o botão seja posicionado em relação ao ancestral mais próximo que tenha position: relative; (no caso, o <section>). */
     outline: none;
     box-shadow: none;
+    border: black 2px solid;
     font-size: 2em;
 }
 
+section #btn1:active {
+    background-color: #222;    /* cor mais escura ao pressionar */
+    transform: scale(0.95);    /* botão fica levemente menor */
+    box-shadow: 0 2px 5px #000 inset; /* sombra interna */
+}
+
 section #btn2{
-    background-color: aqua;
+    background-color: rgb(99, 99, 99);
     width: auto;
     height: auto;
     bottom: 20px;
     left: 20px;
+    border-radius: 10px;
+    border: black 2px solid;
     position: absolute;
     outline: none;
     box-shadow: none;
     font-size: 1em;
+    font-weight: bold;
+}
+
+section #btn2:active {
+    background-color: #222;    /* cor mais escura ao pressionar */
+    transform: scale(0.95);    /* botão fica levemente menor */
+    box-shadow: 0 2px 5px #000 inset; /* sombra interna */
 }
 
 footer{
